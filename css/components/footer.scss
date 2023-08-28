@@ -1,0 +1,51 @@
+@import "variables";
+
+footer {
+  background-color: map-get($color, "secondary");
+  padding: 45px;
+
+  @include pc3 {
+    padding: 30px;
+  }
+
+  @include pc4 {
+    padding: 10px;
+  }
+
+  .grid-container {
+    color: map-get($color, "primary");
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    p {
+      margin: 0.5rem;
+      font-size: 1rem;
+
+      @include pc3 {
+        font-size: 0.6rem;
+      }
+
+      @include mobile1 {
+        font-size: 0.3rem;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+.grid-container .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  @include mobile1 {
+    font-size: 1.2rem;
+  }
+}
+
+.grid4 {
+  grid-column: 4/ span 1;
+}

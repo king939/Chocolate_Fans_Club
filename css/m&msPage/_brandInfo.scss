@@ -1,0 +1,128 @@
+.mams {
+  .brand_Info {
+    h2 {
+      background-color: map-get($color, "primary");
+      color: #fff;
+      text-align: center;
+      font-size: 2.6rem;
+      padding: 0.6rem;
+      font-weight: 600;
+      line-height: 2.3rem;
+      font-family: map-get($fontFamily, 'primary');
+
+      @include pc3 {
+        font-size: 2rem;
+      }
+
+      @include mobile1 {
+        font-size: 1.7rem;
+      }
+    }
+
+    .contentContainer {
+      text-align: center;
+
+      .fig01 {
+        width: 20%;
+        float: left;
+        margin-top: 12rem;
+
+        @include pc3 {
+          margin-top: 17rem;
+        }
+
+        @include pc4 {
+          margin-top: 22rem;
+        }
+      }
+
+      .fig02 {
+        width: 20%;
+        float: right;
+        margin-top: -5rem;
+
+        @include pc3 {
+          margin-top: -2rem;
+        }
+
+        @include pc4 {
+          margin-top: -1rem;
+        }
+      }
+
+      .fig03 {
+        width: 17%;
+        float: right;
+        margin-top: -10rem;
+
+        @include pc3 {
+          margin-top: -5rem;
+        }
+
+        @include pc4 {
+          margin-top: -2rem;
+        }
+      }
+
+      .content {
+        padding: 4rem 18rem;
+
+        @include pc2 {
+          padding: 4rem 13rem;
+        }
+
+        @include pc3 {
+          padding: 4rem 9rem;
+        }
+
+        @include pc730px {
+          padding: 4rem 6rem;
+        }
+
+        @include pc4 {
+          padding: 2rem 4rem;
+        }
+
+        @include mobile1 {
+          padding: 2rem 2rem;
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          font-family: map-get($fontFamily, 'primary');
+        }
+
+        p {
+          font-size: 1.1rem;
+          font-family: map-get($fontFamily, 'secondary');
+          line-height: 1.8rem;
+          margin-top: 1.5rem;
+          font-weight: 500;
+
+          @include pc2 {
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .content01 {
+        background-color: #b11224;
+        color: #fff;
+      }
+
+      .content02 {
+        background-color: #fff200;
+      }
+
+      .content03 {
+        background-color: #2f9fd7;
+        color: #fff;
+      }
+
+      .content04 {
+        background-color: #31ac55;
+        color: #fff;
+      }
+    }
+  }
+}

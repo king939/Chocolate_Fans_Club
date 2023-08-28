@@ -1,0 +1,86 @@
+.content {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1% 6% 1% 6%;
+    background-color: map-get($color, "third");
+    margin: 1rem 2rem 2rem 2rem;
+    gap: 0rem 2rem;
+
+    @include pc2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0.8rem;
+    }
+    .image01 {
+      @include pc2 {
+        order: 0;
+      }
+    }    
+    .text01 {
+      @include pc2 {
+        order: 1;
+      }
+    }    
+    .image02 {
+      @include pc2 {
+        order: 2;
+      }
+    }
+    .text02 {
+      @include pc2 {
+        order: 3;
+      }
+    }
+    .image03 {
+      @include pc2 {
+        order: 4;
+      }
+    }
+    .text03 {
+      @include pc2 {
+        order: 5;
+      }
+    }
+
+    .textSide {
+      margin: 1rem;
+      border: 3px solid map-get($color, 'secondary');
+      padding: 1rem;
+
+      @include pc2 {
+        padding: 0.8rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        color: map-get($color, "primary");
+        margin-bottom: 1rem;
+        font-family: map-get($fontFamily, "primary" );
+      }
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        font-family: map-get($fontFamily, "secondary" );
+        color: map-get($color, "secondary" );
+      }
+    }
+
+    .imageSide {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 6rem;
+
+      @include pc2 {
+        padding-top: 1rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "chocolate-funs-club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "King Wong",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "font-awesome": "^4.7.0",
+    "sass": "^1.66.1",
+    "soa": "^1.0.0"
+  }
+}

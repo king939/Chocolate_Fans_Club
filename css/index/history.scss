@@ -1,0 +1,79 @@
+.history {
+  background-color: #fff;
+  color: map-get($color, "secondary");
+
+  h2 {
+    background-color: map-get($color, "primary");
+    color: #fff;
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 0.6rem;
+    font-weight: 600;
+    line-height: 2.3rem;
+    font-family: map-get($fontFamily, 'primary');
+
+    @include pc3 {
+      font-size: 2rem;
+    }
+
+    @include mobile1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 4rem;
+
+    @include pc3 {
+      display: block;
+    }
+
+    .grid-image {
+      display: flex;
+    }
+  }
+
+  .bgImage02 {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid-text {
+    @include pc3 {
+      padding: 3%;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 3rem;
+
+      @include pc1 {
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+
+      @include pc3 {
+        font-size: 0.4rem;
+        line-height: 1.4rem;
+      }
+    }
+  }
+}
+
+a {
+  color: map-get($color, 'secondary');
+  font-size: 1.4rem;
+  line-height: 3rem;
+
+  &:hover {
+    color: map-get($color, "primary");
+  }
+
+  @include pc1 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}

@@ -1,0 +1,123 @@
+.event {
+  .eventDetails {
+    .gridContainer {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 3rem 6rem;
+      gap: 0rem 2rem;
+      background-color: map-get($color , 'third');
+
+      @include pc2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      @include pc3 {
+        padding: 2rem 3rem;
+      }
+
+      .gridImage {
+        .imageContainer {
+          width: 100%;
+
+          @include pc2 {
+            display: flex;
+            justify-content: left;
+          }
+
+          @include pc4 {
+            justify-content: center;
+          }
+
+          img {
+            width: 100%;
+
+            @include pc2 {
+              width: 70%;
+            }
+            @include pc4 {
+              width: 90%;
+            }
+          }
+        }
+      }
+
+      .gridText {
+        margin-top: 1.4rem;
+
+        @include pc2 {
+          margin-top: 2rem;
+        }
+
+        @include pc4 {
+          text-align: center;
+        }
+
+        h3 {
+          font-size: 2.3rem;
+          margin-top: 0.4rem;
+          padding-bottom: 1.5rem;
+          color: map-get($color, "primary");
+
+          @include pc2 {
+            font-size: 1.8rem;
+            padding-bottom: 1.2rem;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          padding-bottom: 1.5rem;
+          color: rgba(0, 0, 0, 0.7);
+
+          @include pc2 {
+            font-size: 1.8rem;
+            padding-bottom: 1.2rem;
+          }
+        }
+
+        button {
+          font-size: 1.4rem;
+          padding: 0.4rem 5rem;
+          background-color: map-get($color , 'secondary');
+          border: none;
+          cursor: not-allowed;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+      }
+
+      .eventContent {
+        margin-top: 2rem;
+        border: 2px solid map-get($color , 'primary');
+        padding: 2rem;
+        width: 100%;
+
+        @include pc2 {
+          padding: 0.8rem;
+        }
+
+        @include pc3 {
+          padding: 0.3
+        }
+
+        p {
+          font-size: 1rem;
+          padding-bottom: 1.5rem;
+          color: rgba(0, 0, 0, 0.7);
+        }
+
+        li {
+          font-size: 1rem;
+          color: rgba(0, 0, 0, 0.7);
+        }
+
+        ul {
+          padding-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}

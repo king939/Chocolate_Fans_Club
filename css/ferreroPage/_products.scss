@@ -1,0 +1,75 @@
+.ferror {
+  .products {
+    margin-bottom: 2rem;
+
+    @include pc3 {
+      margin-bottom: 0rem;
+    }
+
+    h2 {
+      background-color: map-get($color, "primary");
+      color: #fff;
+      text-align: center;
+      font-size: 2.6rem;
+      padding: 0.6rem;
+      font-weight: 600;
+      line-height: 2.3rem;
+      font-family: map-get($fontFamily, 'primary');
+
+      @include pc3 {
+        font-size: 2rem;
+      }
+
+      @include mobile1 {
+        font-size: 1.7rem;
+      }
+    }
+
+    .productsContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 3rem;
+      background-color: #fff;
+
+      .productContainer {
+        width: 25%;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          font-weight: 800;
+          color: map-get($color, "primary");
+          font-family: map-get($fontFamily, 'secondary');
+          text-align: center;
+
+          @include pc3 {
+            font-size: 0.7rem;
+          }
+        }
+
+        .productImageContainer {
+          overflow: hidden;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          transition: 3s;
+
+          &:hover {
+            transform: scale(1.3);
+          }
+        }
+      }
+    }
+
+    .mask2 {
+      clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+
+    }
+
+    .mask1 {
+      clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%);
+    }
+  }
+}

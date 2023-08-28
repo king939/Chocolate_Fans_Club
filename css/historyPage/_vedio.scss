@@ -1,0 +1,26 @@
+.vedio {
+  text-align: center;
+  padding: 2rem;
+
+  @include pc4 {
+    padding: 1rem;
+  }
+
+  iframe {
+    width: 37rem;
+    height: 20rem;
+
+    @include pc3 {
+      width: 30rem;
+      height: 15rem;
+    }
+    @include pc4 {
+      width: 24rem;
+      height: 12rem;
+    }
+    @include mobile1 {
+      width: 18rem;
+      height: 9rem;
+    }
+  }
+}

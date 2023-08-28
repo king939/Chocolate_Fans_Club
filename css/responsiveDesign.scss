@@ -1,0 +1,35 @@
+@mixin pc1 {
+  @media screen and (max-width: map-get($mdeiaWidth, 'max-width-1')){
+    @content
+  }
+};
+
+@mixin pc2 {
+  @media screen and (max-width: map-get($mdeiaWidth, 'max-width-2')) {
+    @content
+  }
+};
+
+@mixin pc3 {
+  @media screen and (max-width: map-get($mdeiaWidth, 'max-width-3')) {
+    @content
+  }
+};
+
+@mixin pc730px {
+  @media screen and (max-width: map-get($mdeiaWidth, 'max-width-3.5')) {
+    @content
+  }
+};
+
+@mixin pc4 {
+  @media screen and (max-width: map-get($mdeiaWidth, 'max-width-4')) {
+    @content
+  }
+};
+
+@mixin mobile1 {
+  @media screen and (max-width: map-get($mdeiaWidth, 'max-width-5')) {
+    @content
+  }
+};

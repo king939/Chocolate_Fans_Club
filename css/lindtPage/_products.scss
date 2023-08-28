@@ -1,0 +1,63 @@
+.lindt {
+  .products h2 {
+    background-color: map-get($color, "primary");
+    color: #fff;
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 0.6rem;
+    font-weight: 600;
+    line-height: 2.3rem;
+    font-family: map-get($fontFamily, 'primary');
+    
+    @include pc3 {
+      font-size: 2rem;
+    }
+
+    @include mobile1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  .lindt_products {
+    .products_grid {
+      width: 100%;
+      margin-top: 1%;
+      padding: 1.5rem;
+      text-align: center;
+      display: grid;
+      grid-template-columns: auto auto auto;
+
+      .product_image_container {
+        overflow: hidden;
+        display: inline-block;
+        max-height: 22rem;
+      }
+
+      .product_container {
+        width: auto;
+        margin: 1rem;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          font-weight: 500;
+          color: map-get($color, "primary");
+          font-family: map-get($fontFamily, 'secondary');
+
+          @include pc3 {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+
+    .product_image {
+      width: 100%;
+
+      &:hover {
+        scale: 1.4;
+        transition: 1.5s;
+      }
+    }
+  }
+}

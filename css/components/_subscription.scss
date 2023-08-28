@@ -1,0 +1,95 @@
+@import "variables";
+@import "../responsiveDesign.scss";
+
+.subscription {
+  position: relative;
+
+  h2 {
+    background-color: map-get($color, "primary");
+    font-family: map-get($fontFamily, 'primary');
+    color: #fff;
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 0.6rem;
+
+    @include pc3 {
+      font-size: 2rem;
+    }
+
+    @include mobile1 {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.subecriptionContent {
+  text-align: center;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+
+  p {
+    font-size: 1.7rem;
+    @include pc3 {
+      font-size: 1.4rem;
+    }
+  }
+
+  form {
+    input {
+      width: 25rem;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      padding: 0.4rem;
+
+      &:focus {
+        border: 1px solid map-get($color, "primary");
+      }
+
+      @include pc3 {
+        width: 18rem;
+      }
+    }
+
+    &:invalid {
+      button {
+        pointer-events: none;
+        opacity: 0.6;
+      }
+    }
+
+    button {
+      width: fit-content;
+      margin: 1.5rem 0px;
+      padding: 1rem 1.5rem;
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 1.3rem;
+      border: none;
+      outline: none;
+      background-color: map-get($color, "secondary");
+      color: map-get($color, "primary");
+      border-radius: 64px;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        background-color: map-get($color, "primary");
+      }
+    }
+  }
+}
+
+.beanImgae2 {
+  width: 7.5rem;
+  position: absolute;
+  top: 8rem;
+  left: 4.5rem;
+  transform: rotate(60deg);
+
+  @include pc1{
+    width: 7rem;
+      position: absolute;
+      top: 8rem;
+      left: 3rem;
+      transform: rotate(60deg);
+  }
+}

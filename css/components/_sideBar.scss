@@ -1,0 +1,56 @@
+.sideBar {
+  display: block;
+  position: fixed;
+  background-color: map-get($color, "primary");
+  right: 0px;
+  width: 16rem;
+  z-index: 3;
+  min-height: 100%;
+  box-shadow: 0px 0px 10rem 0px map-get($color, "primary");
+  transform: translateX(20rem);
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+
+  .sideBarContent {
+    list-style: none;
+
+    li {
+      text-align: start;
+      margin: 1rem 0rem;
+
+      &:hover {
+        background-color: map-get($color, "secondary");
+      }
+
+      a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        line-height: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        font-family: map-get($fontFamily, 'secondary');
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+.sideBtn {
+  display: block;
+  background-color: transparent;
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+  font-weight: 300;
+  padding: 1rem;
+  color: #fff;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    background-color: map-get($color, "secondary");
+  }
+}

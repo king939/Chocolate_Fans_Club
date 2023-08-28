@@ -1,0 +1,157 @@
+.events {
+  background-color: map-get($color, "secondary");
+  padding-bottom: 3rem;
+
+  .eventsContainer {
+    margin: auto auto;
+    background-color: map-get($color, "third");
+    width: 50rem;
+
+    @include pc3 {
+      width: 40rem;
+    }
+
+    @include pc4 {
+      width: 34rem;
+    }
+
+    @include mobile1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 1rem 2rem 1rem;
+      align-items: center;
+    }
+    .event1, .event2 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }
+
+  h2 {
+    background-color: map-get($color, "primary");
+    color: #fff;
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 0.6rem;
+    font-weight: 600;
+    line-height: 2.3rem;
+    font-family: map-get($fontFamily, 'primary');
+
+    @include pc3 {
+      font-size: 2rem;
+    }
+
+    @include mobile1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  h3>a {
+    font-size: 1.8rem;
+    padding-bottom: 1.5rem;
+    color: map-get($color, "primary");
+    line-height: 2.2rem;
+    text-decoration: none;
+
+    &:hover {
+      color: map-get($color, 'secondary' );
+    }
+
+    @include pc3 {
+      font-size: 1.4rem;
+      padding-bottom: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    @include pc4 {
+      font-size: 1.2rem;
+      padding-bottom: 0.6rem;
+      line-height: 1.6rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  li {
+    font-weight: 900;
+    text-align: left;
+    font-size: 1rem;
+
+    @include pc4 {
+      font-size: 0.5rem;
+    }
+  }
+
+  .image img {
+    width: 25rem;
+
+    @include pc3 {
+      width: 20rem;
+      height: 20rem;
+    }
+
+    @include pc4 {
+      width: 17rem;
+      height: 17rem;
+    }
+  }
+
+  .text {
+    @include mobile1 {
+      display: none;
+    }
+  }
+
+  .image {
+    .eventTitle {
+      display: none;
+    }
+
+    @include mobile1 {
+      margin: 2rem;
+      .eventTitle {
+        display: block;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .image,
+  .text {
+    width: 25rem;
+    height: 25rem;
+
+    @include pc3 {
+      width: 20rem;
+      height: 20rem;
+    }
+
+    @include pc4 {
+      width: 17rem;
+      height: 17rem;
+    }
+  }
+
+  .event1 p,
+  .event2 p {
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 2rem;
+
+    @include pc3 {
+      font-size: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    @include pc4 {
+      font-size: 0.2rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .text {
+    padding: 1.7rem;
+  }
+}

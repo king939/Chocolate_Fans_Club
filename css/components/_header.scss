@@ -1,0 +1,88 @@
+@import "../responsiveDesign.scss";
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.header__nav {
+  display: flex;
+  overflow: hidden;
+  background-color: map-get($color, "primary");
+  position: relative;
+  padding: 0.7rem 0rem;
+
+  #modileMenu {
+    margin-top: auto;
+  }
+}
+
+.header__logo h1>a {
+  color: #fff;
+  padding-left: 1.5rem;
+  background-color: map-get($color, "primary");
+  padding: 1rem;
+  font-size: 2.5rem;
+  justify-content: flex-start;
+  font-family: map-get($fontFamily, "primary");
+  text-decoration: none;
+
+  @include pc3 {
+    font-size: 2.1rem;
+  }
+
+  @include mobile1 {
+    font-size: 1.9rem;
+  }
+}
+
+.header__menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+
+  @include pc2 {
+    display: none;
+  }
+
+  li {
+    text-align: center;
+
+    &:hover {
+      background-color: map-get($color, "secondary");
+    }
+
+    a {
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      text-transform: uppercase;
+      line-height: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      font-family: map-get($fontFamily, 'secondary');
+      font-weight: 200;
+    }
+  }
+}
+
+#modileMenu {
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 2;
+  right: 30px;
+  top: 18px;
+  display: none;
+  cursor: pointer;
+
+  @include pc2 {
+    display: block;
+  }
+}

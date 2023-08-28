@@ -1,0 +1,94 @@
+.ferror {
+  .brandInfo {
+    h2 {
+      background-color: map-get($color, "primary");
+      color: #fff;
+      text-align: center;
+      font-size: 2.6rem;
+      padding: 0.6rem;
+      font-weight: 600;
+      line-height: 2.3rem;
+      font-family: map-get($fontFamily, 'primary');
+
+      @include pc3 {
+        font-size: 2rem;
+      }
+
+      @include mobile1 {
+        font-size: 1.7rem;
+      }
+    }
+
+    .gridContainer {
+      margin: 2% 5% 2% 5%;
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 2rem 2rem;
+
+      @include pc730px {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+      .gridImage {
+        .imageContainer {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .gridText {
+        padding: 1rem;
+
+        @include pc730px {
+          text-align: center;
+        }
+
+        h3 {
+          font-size: 1.8rem;
+          color: map-get($color, "primary");
+        }
+
+        p {
+          font-size: 1.1rem;
+          font-family: map-get($fontFamily, 'secondary');
+          line-height: 1.8rem;
+          margin-top: 1.5rem;
+          color: map-get($color, "secondary");
+          font-weight: 500;
+
+          @include pc2 {
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .image01 {
+        @include pc730px {
+          order: 0;
+        }
+      }
+
+      .text01 {
+        @include pc730px {
+          order: 1;
+        }
+      }
+
+      .image02 {
+        @include pc730px {
+          order: 2;
+        }
+      }
+
+      .text02 {
+        @include pc730px {
+          order: 3;
+        }
+      }
+    }
+  }
+}

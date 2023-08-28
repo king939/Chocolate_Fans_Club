@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/79c50731a1.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Chocolate Fans Club</title>
+</head>
+
+<body class="home">
+  <div class="backdrop">
+    <div class="backdrop_content">
+      <h2>Welcome to Chocolate World!</h2>
+      <p>You will receive the lastest news.</p>
+      <button class="closeBckdropBtn">Close</button>
+    </div>
+  </div>
+
+  <div class="sideBar">
+    <button class="sideBtn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+    <ul class="sideBarContent">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/pages/history.html" id="historyBtn">Choclate History</a>
+      </li>
+      <li>
+        <a href="/pages/allEvents.html" id="eventBtn">Events</a>
+      </li>
+      <li>
+        <a href="/pages/aboutUs.html" id="aboutUsBtn">About Us</a>
+      </li>
+    </ul>
+  </div>
+  
+  <header>
+    <nav class="header__nav">
+      <div class="header__logo">
+        <h1><a href="/">Chocolate Fans Club</a></h1>
+      </div>
+      <i class="fa-solid fa-bars" id="modileMenu"></i>
+      <ul class="header__menu">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/pages/history.html" id="historyBtn">Choclate History</a>
+        </li>
+        <li>
+          <a href="/pages/allEvents.html" id="eventBtn">Events</a>
+        </li>
+        <li>
+          <a href="/pages/aboutUs.html"  id="aboutUsBtn">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+      <div class="grid-controll">
+        <div class="grid-image" data-aos="fade-right">
+          <img src="/images/index/bg0004.avif" class="hero_img">
+        </div>
+      <div class="grid-text" data-aos="fade-left">
+        <div class="title">
+          <h1>Welcome to Chocolate World</h1>
+          <button class="joinBtn">Join</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="history">
+    <h2>Chocolate History</h2>
+    <div class="grid-container">
+      <div class="grid-image" data-aos="fade-right">
+        <img class='bgImage02' src="/images/index/history.avif">
+      </div>
+      <div class="grid-text" data-aos="fade-left">
+        <p>Chocolate’s 4,000-year history began in ancient Mesoamerica, present day Mexico. It’s here that the first cacao plants were found. The Olmec, one of the earliest civilizations in Latin America, were the first to turn the cacao plant into chocolate. They drank their chocolate during rituals and used it as medicine.</p>
+        <a href="/pages/history.html">more...</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-chocolate">
+    <h2 data-aos="fade-up">Popular Chocolate</h2>
+    <div class="popular_chocolate__filters_scrollbar" data-aos="fade-up">
+      <button class="popular_chocolate_filter_btn active">All</button>
+      <button class="popular_chocolate_filter_btn">
+        <img src="/images/index/ferrero01.webp">
+        Ferrer
+      </button>
+      <button class="popular_chocolate_filter_btn">
+        <img src="/images/index/hershey01.webp">
+        Hershey
+      </button>
+      <button class="popular_chocolate_filter_btn">
+        <img src="/images/index/lindt01.webp">
+        Lindt
+      </button>
+      <button class="popular_chocolate_filter_btn">
+        <img src="/images/index/m&m01.png">
+        M&M's
+      </button>
+    </div>
+    <div class="popular-chocolates__catalogue" data-aos="fade-up">
+      <a href="/pages/ferrero.html">
+        <article class="popular-chocolates__card">
+          <img src="/images/index/ferrero02.webp" alt="ferrero_image">
+          <h4 class="card_title">Ferrero</h4>
+          <div class="card_details">
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.2</p>
+            </div>
+          </div>
+        </article>
+      </a>
+      <a href="/pages/lindt.html">
+        <article class="popular-chocolates__card active">
+          <img src="/images/index/lindt01.webp" alt="ferrero_image">
+          <h4 class="card_title">Lindt</h4>
+          <div class="card_details">
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.8</p>
+            </div>
+          </div>
+        </article>
+      </a>
+      <a href="/pages/m&ms.html">
+        <article class="popular-chocolates__card">
+          <img src="/images/index/m&m02.webp" alt="m&m's_image">
+          <h4 class="card_title">M&M's</h4>
+          <div class="card_details">
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.5</p>
+            </div>
+          </div>
+        </article>
+      </a>
+    </div>
+  </section>
+
+  <section class="aboutUs">
+    <div class="title">
+      <h2>About Us</h2>
+    </div>
+    <article class="aboutUsBg" data-aos="fade-left">
+      <img class="beanImg" src="/images/aboutUs/aboutUsImage.png">
+      <div class="aboutUsContent">
+        <p>
+          Founded in 2013 by King Wong. 
+          Our vision is to promote craft chocolate appreciation and widen the selection of fine chocolate products in Asia.
+        </p><br/>
+        <p class="listTitle">What We do?</p><br/>
+        <ul>
+          <li>Import high quality craft chocolate brands from around the world</li>
+          <li>​Educational chocolate tasting/pairing workshops</li>
+          <li>Corporate tasting & pairing events</li>
+          <li>Consultancy service</li>
+          <li>Seasonal pop-up stores</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section class="events">
+    <h2>Events</h2>
+    <div class="eventsContainer">
+      <div class="event1">
+          <div class="text" data-aos="fade-down">
+            <h3><a href="/pages/event1.html">Online Chocolate Tasting Club (September Edition)</a></h3>
+            <p>Join our September Online Tasing. We are going through a sensory journey of tasting 5 types of dark chocolate bars together. All within the 70% range.</p>
+            <ul>
+              <li>Date & Time:<br/> 9 September/ 2:00pm - 4:00pm</li>
+              <li>Event fee:<br/>$200 per head </li>
+            </ul>
+          </div>
+          <div class="image" data-aos="fade-left">
+            <img src="/images/events/event01.webp">
+            <h3 class="eventTitle"><a href="/pages/event1.html">Online Chocolate Tasting Club (September Edition)</a></h3>
+          </div>
+      </div>
+      <div class="event2">
+          <div class="image" data-aos="fade-right">
+            <img src="/images/events/event02.webp">
+            <h3 class="eventTitle"><a href="/pages/event2.html">Online Chocolate Tasting Club (May Edition)</a></h3>
+          </div>
+          <div class="text" data-aos="fade-up">
+            <h3 class="eventTitle"><a href="/pages/event2.html">Online Chocolate Tasting Club (May Edition)</a></h3>
+            <p>Join our May Online Tasing. We are going through a sensory journey of tasting 5 types of dark chocolate bars together to discover the best chocolate.</p>
+            <ul>
+              <li>Date & Time:<br/>16 May/ 2:00pm - 5:00pm</li>
+              <li>Event fee:<br/>$400 per head</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscription">
+    <img class="beanImgae2" src="/images/subscribe/beanImage2.png">
+    <h2>Subscription</h2>
+    <div class="subecriptionContent">
+      <p data-aos="flip-down">Join our chocolate mailing list for latest news!</p>
+      <form data-aos="flip-up">
+        <input type="email" placeholder="Email" required=""><br>
+        <button class="subscribeBtn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="grid-container">
+      <div class="grid1">
+        <p class="title">Information</p>
+        <p>Terms & Conditions</p>
+      </div>
+      <div class="grid3">
+        <P class="title">Follow Us</P>
+        <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+        <p><i class="fa-brands fa-twitter"></i> Twitter</p>
+        <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+      </div>
+      <div class="grid4">
+        <p class="title">Contacts</p>
+        <p>T: 852- 9578 1294</p>
+        <P>E: chcolatclub12@gmail.com</P>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&reg;2023 King Wong. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+</html>

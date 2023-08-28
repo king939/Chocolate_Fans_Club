@@ -1,0 +1,126 @@
+.lindt {
+  .brand_Info {
+    background-color: #fff;
+    margin-bottom: 6rem;
+
+    @include pc730px {
+      margin-bottom: 2rem;
+    }
+
+      h2 {
+        background-color: map-get($color, "primary");
+        color: #fff;
+        text-align: center;
+        font-size: 2.6rem;
+        padding: 0.6rem;
+        font-weight: 600;
+        line-height: 2.3rem;
+        font-family: map-get($fontFamily, 'primary');
+
+      @include pc3 {
+        font-size: 2rem;
+      }
+
+      @include mobile1 {
+        font-size: 1.7rem;
+      }
+    }
+
+    .grid-container {
+      position: relative;
+      background-color: map-get($color, "third");
+      margin: 4% 10% 4% 10%;
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      @include pc730px {
+        display: block;
+      }
+
+      .grid-text {
+        padding: 1rem;
+        h3 {
+          font-size: 1.8rem;
+          color: map-get($color, "primary");
+        }
+        p {
+          font-size: 1.1rem;
+          font-family: map-get($fontFamily, 'secondary');
+          line-height: 1.8rem;
+          margin-top: 1.5rem;
+          color: map-get($color, "secondary");
+          font-weight: 500;
+
+          @include pc2 {
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .grid-image {
+        position: relative;
+
+        @include pc730px {
+          position: static;
+        }
+
+        img {
+          max-width: 100%;
+        }
+
+        .image_container01 {
+          position: absolute;
+          width: 100%;
+          min-width: 300px;
+          top: -3rem;
+          left: -4rem;
+
+          @include pc2 {
+            top: 2rem;
+            left: -3rem;
+          }
+
+          @include pc3 {
+            top: 5rem;
+            left: -3rem;
+          }
+
+          @include pc730px {
+            position: static;
+          }
+
+          @include pc730px {
+            min-width: 250px;
+          }
+        }
+
+        .image_container02 {
+          position: absolute;
+          width: 100%;
+          min-width: 300px;
+          top: 3rem;
+          right: -4rem;
+
+          @include pc2 {
+            top: 4rem;
+            right: -3rem;
+          }
+
+          @include pc3 {
+            top: 6rem;
+            right: -3rem;
+          }
+
+          @include pc730px {
+            position: static;
+          }
+
+          @include pc730px {
+            min-width: 250px;
+          }
+        }
+      }
+    }
+  }
+}

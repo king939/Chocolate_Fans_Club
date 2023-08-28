@@ -1,0 +1,16 @@
+.hero {
+  h1 {
+    font-family: map-get($fontFamily, 'primary');
+    color: map-get($color, "primary");
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 2rem;
+
+    @include pc3 {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      padding: 0.4rem;
+    }
+  }
+}

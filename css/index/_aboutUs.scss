@@ -1,0 +1,90 @@
+.aboutUs {
+  position: relative;
+  z-index: -2;
+
+  h2 {
+    background-color: map-get($color, "primary");
+    color: #fff;
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 0.6rem;
+    font-weight: 600;
+    line-height: 2.3rem;
+    font-family: map-get($fontFamily, 'primary');
+    @include pc3 {
+      font-size: 2rem;
+    }
+
+    @include mobile1 {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.aboutUsContent {
+  padding: 5% 15% 5% 15%;
+  margin: 3.4rem;
+  background-color: map-get($color, "third");
+  color: map-get($color, "primary");
+
+  @include pc3 {
+    margin: 2rem;
+  }
+  @include pc3 {
+    margin: 1rem;
+    padding: 5% 10% 5% 10%;
+  }
+}
+
+.beanImg {
+  position: absolute;
+  z-index: 1;
+  right: 2rem;
+  top: -2rem;
+
+  @include pc3 {
+    right: -0.3rem;
+    top: 0.3rem;
+  }
+  @include pc3 {
+    right: -0.2rem;
+    top: -0.2rem;
+  }
+}
+
+article p {
+  text-align: left;
+  font-size: 1.4rem;
+
+  @include pc3{
+    font-size: 1.2rem;
+  }
+
+  @include mobile1{
+    font-size: 0.9rem;
+  }
+}
+
+li {
+  font-size: 1.3rem;
+  text-align: left;
+  padding: 0.5rem;
+  color: map-get($color, "secondary");
+
+  @include pc3{
+    font-size: 1rem;
+  }
+
+  @include mobile1{
+    font-size: 0.7rem;
+  }
+}
+
+.listTitle {
+  font-weight: 700;
+  font-size: 1.4rem;
+
+  @include pc3{
+    font-size: 1.2rem;
+  }
+}

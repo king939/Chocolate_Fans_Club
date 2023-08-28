@@ -1,0 +1,39 @@
+@import "./variables";
+
+.backdrop {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+
+  .backdrop_content {
+    background-color: map-get($color, "third");
+    text-align: center;
+    padding: 1rem;
+    width: 18rem;
+    margin: 0 auto;
+    margin-top: 10%;
+    line-height: 2rem;
+    border: 4px solid map-get($color, "primary");
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    button {
+      font-size: 1rem;
+      border-radius: 64px;
+      background-color: map-get($color, "secondary");
+      padding: 0.7rem 1.2rem;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
