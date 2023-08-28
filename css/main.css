@@ -436,7 +436,7 @@ footer .copyright {
 .hero .background_image_ferrero {
   width: 100%;
   height: 20rem;
-  background-image: url("../../images/ferrero/hero-image_ferrero.avif");
+  background-image: url("../images/ferrero/hero_image_ferrero.avif");
   background-size: cover;
   background-repeat: no-repeat;
 }
