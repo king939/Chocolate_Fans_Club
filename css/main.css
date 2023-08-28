@@ -27,6 +27,7 @@
   font-size: 1rem;
   border-radius: 64px;
   background-color: #B99A87;
+  color: #65463E;
   padding: 0.7rem 1.2rem;
   border: none;
   cursor: pointer;
@@ -273,17 +274,17 @@ footer .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-footer .grid-container p {
+footer .grid-container p, footer .grid-container a {
   margin: 0.5rem;
   font-size: 1rem;
 }
 @media screen and (max-width: 800px) {
-  footer .grid-container p {
+  footer .grid-container p, footer .grid-container a {
     font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 540px) {
-  footer .grid-container p {
+  footer .grid-container p, footer .grid-container a {
     font-size: 0.7rem;
   }
 }
