@@ -58,7 +58,7 @@
   background-color: map-get($color, "secondary");
   border: none;
   margin-top: 0.8rem;
-  color: map-get($color, 'primary');
+  color: map-get($color, 'primary' );
 
   @include pc2 {
     margin-top: 0rem;
